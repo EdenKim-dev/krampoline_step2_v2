@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 import { instance } from "./api.js";
 
