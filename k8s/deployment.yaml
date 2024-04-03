@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: frontend
 spec:
+  replicas: 20
   selector:
     matchLabels:
-      app: frontend
+      app: myfrontend
   template:
     metadata:
       labels:
-        app: frontend
+        app: myfrontend
     spec:
-      replicas: 20
       containers:
-        - name: frontend
+        - name: myfrontend
           # 여러분의 image 주소를 입력해주세요.
           image: krmp-d2hub-idock.9rum.cc/dev-test/repo_e6f79e6d8248
