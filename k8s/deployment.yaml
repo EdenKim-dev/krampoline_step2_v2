@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myfrontend
+  name: frontend
 spec:
   replicas: 20
   selector:
     matchLabels:
-      app: myfrontend
+      app: frontend
   template:
     metadata:
       labels:
-        app: myfrontend
+        app: frontend
     spec:
       containers:
-        - name: myfrontend
+        - name: frontend
           # 여러분의 image 주소를 입력해주세요.
           image: krmp-d2hub-idock.9rum.cc/dev-test/repo_e6f79e6d8248
